@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("./images/texture-min.jpg") repeat left top fixed;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.header {
+  padding-top: 40px;
+}
+
+.header .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.logo img {
+  width: 62px;
+  height: 60px;
+}
+
+.logo-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-heading {
+  font-size: 26px;
+}
+
+.logo-desc {
+  font-size: 14px;
+}
+
+.navbar {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.navbar-item {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.hero {
+ display: flex;
+ /* position: relative; */
+ justify-content: center;
+ align-items: center;
+ height: 750px;
+}
+
+.hero-left {
+  position: relative;
+  width: 400px;
+  min-height: 66px;
+  margin-top: 8px;
+}
+
+.hero-wrap::after {
+  position: absolute;
+  content: '';
+  background-image: url('./images/jap_1.png');
+  width: 26px;
+  height: 293px;
+  top: 0;
+  left: -60px;
+}
+
+.hero-right {
+  margin-left: auto;
+}
+
+.hero-right {
+  height: 750px;
+  background-image: url('./images/img_01-min.png');
+  background-size: contain;
+  width: 59.76%;
+  /* margin-left: 44.31%; */
+  position: absolute;
+  right: 0;
+}
+
+.hero-heading {
+  font-size: 52px;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  margin: 0;
+  line-height: 52px;
+}
+
+.hero-desc {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-bottom: 28px;
+}
+
+.hero-button {
+  min-height: 70px;
+  position: relative;
+  width: 250px;
+  background: transparent url('./images/button_r.png') no-repeat center center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+}
+
+.shared_content-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+  width: 76.18%;
+  margin: 0 auto;
+}
+
+.shared_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.shared_content span {
+  font-size: 21px;
+}
+
+.heading {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.heading h4 {
+  font-size: 37px;
+  font-family: "Merienda", cursive;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "div1 div2 div3"
+    "div4 div5 div6"; 
+  gap: 32px;
+}
+
+.gallery-item img {
+  border-radius: 70px;
+  width: 370px;
+  height: 276px;
+}
+
+.div1 { grid-area: div1; }
+.div2 { grid-area: div2; }
+.div3 { grid-area: div3; }
+.div4 { grid-area: div4; }
+.div5 { grid-area: div5; }
+.div6 { grid-area: div6; }
+
+.special-menu-wrap {
+  background: url('./images/img_08-min.jpg') repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  padding: 60px 30px;
+}
+
+.special-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.special-menu-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.special-menu-item .box {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.special-menu-left, .special-menu-right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.box h4 {
+  font-size: 21px;
+}
+
+.box.box-2 h4 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+.box span {
+  font-size: 21px;
+}
+
+.box.box-2 span {
+  font-size: 17px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 86px;
+  padding-bottom: 20px;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer-item a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
